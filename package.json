@@ -11,9 +11,14 @@
   "dependencies": {
     "@fontsource-variable/inter": "^5.2.8",
     "@fontsource-variable/lora": "^5.2.8",
-    "@fontsource/material-icons-round": "^5.2.6",
+    "@iconify-icons/material-symbols": "^1.2.58",
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/ic": "^1.2.4",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.17.1",
+    "astro-icon": "^1.1.5",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
   }
 }

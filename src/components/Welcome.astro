@@ -1,6 +1,10 @@
 ---
 import Logo from "./Logo.astro";
-import "@fontsource/material-icons-round";
+import { Icon } from 'astro-icon/components'
+
+
+
+
 ---
 
 <nav
@@ -78,18 +82,17 @@ import "@fontsource/material-icons-round";
 				class="inline-flex justify-center items-center px-8 py-3.5 text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark transition-all shadow-lg shadow-blue-500/25"
 				href="#join-beta"
 			>
-				<span class="material-icons-round mr-2 text-xl"
-					>rocket_launch</span
-				>
+				<Icon name="ic:round-rocket-launch" class="w-8 h-8"/>
+
+
+				
 				Start Optimizing Free
 			</a>
 			<a
-				class="inline-flex justify-center items-center px-8 py-3.5 text-base font-medium rounded-full text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
-				href="#"
+			class="inline-flex justify-center items-center px-8 py-3.5 text-base font-medium rounded-full text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
+			href="#"
 			>
-				<span class="material-icons-round mr-2 text-xl"
-					>play_circle</span
-				>
+			<Icon name="ic:round-play-circle" class="w-8 h-8"/>
 				Watch Demo
 			</a>
 		</div>
