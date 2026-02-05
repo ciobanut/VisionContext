@@ -1,3 +1,11 @@
+---
+import "../styles/global.css";
+import '@fontsource-variable/inter'; // Supports weights 100-900
+import '@fontsource-variable/lora'; // Supports weights 400-700
+// Supports weights 400-700
+import '@fontsource-variable/lora/wght-italic.css';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,19 +13,28 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
+		<link
+			rel="icon"
+			type="image/png"
+			href="/favicon-96x96.png"
+			sizes="96x96"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon.png"
+		/>
+		<meta name="apple-mobile-web-app-title" content="Vision Context" />
+		<link rel="manifest" href="/site.webmanifest" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>
+			Image Alt Text Generator – Context-Aware AI by VisionContext
+		</title>
+
 	</head>
-	<body>
+	<body
+		class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300"
+	>
 		<slot />
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #2563EB;
+    --color-primary-dark: #1d4ed8;
+    --color-background-light: #F8FAFC;
+    --color-background-dark: #0F172A;
+    --color-surface-light: #FFFFFF;
+    --color-surface-dark: #1E293B;
+    --color-text-light: #1E293B;
+    --color-text-dark: #F1F5F9;
+    --color-subtext-light: #64748B;
+    --color-subtext-dark: #94A3B8;
+
+    --font-display: 'Lora Variable', serif;
+    --font-body: 'Inter Variable', sans-serif;
+
+    --radius: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-3xl: 2rem;
+
+    --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.15);
+}
+
+@dark {
+    color-scheme: dark;
+}
+
+.material-icons-round {
+    font-family: 'Material Icons Round';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Inter Variable", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+    font-family: "Lora Variable", serif !important;
+}
+
+.mesh-gradient {
+    background: radial-gradient(circle at 50% 50%,
+            rgba(37, 99, 235, 0.08) 0%,
+            rgba(248, 250, 252, 0) 50%);
+}
+
+.dark .mesh-gradient {
+    background: radial-gradient(circle at 50% 50%,
+            rgba(37, 99, 235, 0.15) 0%,
+            rgba(15, 23, 42, 0) 50%);
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.bar-grow {
+    animation: grow 1.5s ease-out forwards;
+    transform-origin: bottom;
+    transform: scaleY(0);
+}
+
+@keyframes grow {
+    to {
+        transform: scaleY(1);
+    }
+}
