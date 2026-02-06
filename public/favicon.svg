@@ -41,6 +41,6 @@
 <circle opacity="0.64" cx="679.509" cy="49.4717" r="25" fill="black"></circle>
 <circle opacity="0.64" cx="818.893" cy="120.491" r="25" fill="black"></circle>
 <circle opacity="0.64" cx="929.509" cy="231.107" r="25" fill="black"></circle>
-</svg></svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+</svg></svg><style>@media (prefers-color-scheme: light) { :root { filter: contrast(1) brightness(1); } }
 @media (prefers-color-scheme: dark) { :root { filter: invert(100%); } }
 </style></svg>
