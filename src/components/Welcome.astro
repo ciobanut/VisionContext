@@ -1,672 +1,536 @@
 ---
 import Logo from "./Logo.astro";
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
+import JoinBetaCallToAction from "./cta/JoinBeta.astro";
 ---
 
 <nav
-	class="fixed w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800"
+  class="fixed w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800"
 >
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="flex justify-between items-center h-20">
-			<Logo />
-			<div
-				class="hidden md:flex space-x-8 text-sm font-medium text-subtext-light dark:text-subtext-dark"
-			>
-				<a class="hover:text-primary transition-colors" href="#"
-					>Features</a
-				>
-				<a class="hover:text-primary transition-colors" href="#"
-					>How it works</a
-				>
-				<a class="hover:text-primary transition-colors" href="#"
-					>Pricing</a
-				>
-				<a class="hover:text-primary transition-colors" href="#">FAQ</a>
-			</div>
-			<div class="flex items-center space-x-4">
-				<a
-					class="text-sm font-medium hover:text-primary hidden sm:block"
-					href="#">Log in</a
-				>
-				<a
-					class="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-glow"
-					href="#join-beta"
-				>
-					Get Started
-				</a>
-			</div>
-		</div>
-	</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <Logo />
+      <div
+        class="hidden md:flex space-x-8 text-sm font-medium text-subtext-light dark:text-subtext-dark"
+      >
+        <a class="hover:text-primary transition-colors" href="#">Features</a>
+        <a class="hover:text-primary transition-colors" href="#">How it works</a
+        >
+        <a class="hover:text-primary transition-colors" href="#">Pricing</a>
+        <a class="hover:text-primary transition-colors" href="#">FAQ</a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a
+          class="text-sm font-medium hover:text-primary hidden sm:block"
+          href="#">Log in</a
+        >
+        <a
+          class="bg-primary hover:bg-primary-dark text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-glow"
+          href="#join-beta"
+        >
+          Get Started
+        </a>
+      </div>
+    </div>
+  </div>
 </nav>
 <section
-	class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden mesh-gradient"
+  class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden mesh-gradient"
 >
-	<div
-		class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
-	>
-		<div
-			class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 text-primary text-xs font-semibold mb-8"
-		>
-			<span class="flex h-2 w-2 relative">
-				<span
-					class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
-				></span>
-				<span
-					class="relative inline-flex rounded-full h-2 w-2 bg-primary"
-				></span>
-			</span>
-			New: Bulk Image Analysis Engine v2.0 &gt;
-		</div>
-		<h1
-			class="text-3xl text-balance md:text-4xl lg:text-5xl font-display font-medium tracking-tight mb-6 text-slate-900 dark:text-white leading-tight"
-		>
-			Automated Alt Text that <br class="hidden md:block" />
-			actually boosts <span
-				class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400 italic font-light"
-				>SEO Trust</span
-			>
-		</h1>
-		<p
-			class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-subtext-light dark:text-subtext-dark mb-10"
-		>
-			Stop losing traffic to accessibility errors. Our intelligent plugin
-			analyzes your media library and generates context-aware,
-			SEO-optimized alt text in seconds.
-		</p>
-		<div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-			<a
-				class="inline-flex flex gap-2 justify-center items-center px-8 py-3.5 text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark transition-all shadow-lg shadow-blue-500/25"
-				href="#join-beta"
-			>
-				<Icon name="ic:round-rocket-launch" class="w-6 h-6"/>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+    <div
+      class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-100 dark:border-blue-800 text-primary text-xs font-semibold mb-8"
+    >
+      <span class="flex h-2 w-2 relative">
+        <span
+          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+        ></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+        ></span>
+      </span>
+      New: Bulk Image Analysis Engine v2.0 &gt;
+    </div>
+    <h1
+      class="text-3xl text-balance md:text-4xl lg:text-5xl font-display font-medium tracking-tight mb-6 text-slate-900 dark:text-white leading-tight"
+    >
+      Automated Alt Text that <br class="hidden md:block" />
+      actually boosts <span
+        class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400 italic font-light"
+        >SEO Trust</span
+      >
+    </h1>
+    <p
+      class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-subtext-light dark:text-subtext-dark mb-10"
+    >
+      Stop losing traffic to accessibility errors. Our intelligent plugin
+      analyzes your media library and generates context-aware, SEO-optimized alt
+      text in seconds.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+      <a
+        class="inline-flex flex gap-2 justify-center items-center px-8 py-3.5 text-base font-medium rounded-full text-white bg-primary hover:bg-primary-dark transition-all shadow-lg shadow-blue-500/25"
+        href="#join-beta"
+      >
+        <Icon name="ic:round-rocket-launch" class="w-6 h-6" />
 
-
-				
-				Start Optimizing Free
-			</a>
-			<a
-			class="inline-flex flex gap-2 justify-center items-center px-8 py-3.5 text-base font-medium rounded-full text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
-			href="#"
-			>
-			<Icon name="ic:round-play-circle" class="w-6 h-6"/>
-				Watch Demo
-			</a>
-		</div>
-		<div class="relative max-w-5xl mx-auto mt-12 animate-float">
-			<div
-				class="absolute inset-0 bg-gradient-to-t from-background-light dark:from-background-dark via-transparent to-transparent z-20 h-full w-full"
-			>
-			</div>
-			<div
-				class="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 p-2 md:p-4 backdrop-blur-sm bg-opacity-80 dark:bg-opacity-80"
-			>
-				<div
-					class="bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 relative h-64 md:h-96 flex items-center justify-center"
-				>
-					<div
-						class="absolute inset-0 opacity-10 dark:opacity-20"
-						style="background-image: radial-gradient(#3B82F6 1px, transparent 1px); background-size: 20px 20px;"
-					>
-					</div>
-					<div
-						class="flex items-center gap-4 md:gap-8 relative z-10 px-4"
-					>
-						<div
-							class="w-24 h-24 md:w-32 md:h-32 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 shadow-lg flex items-center justify-center text-white"
-						>
-<Icon name="ic:round-image" class="w-6 h-6"/>
-
-						</div>
-						<div
-							class="flex-1 h-2 bg-slate-200 dark:bg-slate-800 rounded-full relative w-32 md:w-64 overflow-hidden"
-						>
-							<div
-								class="absolute inset-0 bg-primary/50 w-1/2 animate-[shimmer_2s_infinite] translate-x-[-100%]"
-							>
-							</div>
-							<style>
-								@keyframes shimmer {
-									100% {
-										transform: translateX(200%);
-									}
-								}
-							</style>
-						</div>
-						<div
-							class="w-12 h-12 rounded-full bg-white dark:bg-slate-800 shadow-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center text-primary z-20 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
-						>
-			<Icon name="ic:round-auto-awesome" class="w-6 h-6"/>
-
-							
-						</div>
-						<div
-							class="w-48 md:w-64 p-4 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-200 dark:border-slate-700 text-left"
-						>
-							<div
-								class="h-2 w-16 bg-blue-100 dark:bg-blue-900/40 rounded mb-2"
-							>
-							</div>
-							<div
-								class="h-3 w-full bg-slate-100 dark:bg-slate-700 rounded mb-1"
-							>
-							</div>
-							<div
-								class="h-3 w-4/5 bg-slate-100 dark:bg-slate-700 rounded"
-							>
-							</div>
-							<div
-								class="mt-3 flex items-center gap-1 text-green-500 text-xs font-semibold"
-							>
-							<Icon name="ic:round-check-circle" class="w-6 h-6"/>
-							 SEO Optimized
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        Start Optimizing Free
+      </a>
+      <a
+        class="inline-flex flex gap-2 justify-center items-center px-8 py-3.5 text-base font-medium rounded-full text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-all"
+        href="#"
+      >
+        <Icon name="ic:round-play-circle" class="w-6 h-6" />
+        Watch Demo
+      </a>
+    </div>
+    <div class="relative max-w-5xl mx-auto mt-12 animate-float">
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-background-light dark:from-background-dark via-transparent to-transparent z-20 h-full w-full"
+      >
+      </div>
+      <div
+        class="bg-surface-light dark:bg-surface-dark rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 p-2 md:p-4 backdrop-blur-sm bg-opacity-80 dark:bg-opacity-80"
+      >
+        <div
+          class="bg-slate-50 dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-100 dark:border-slate-800 relative h-64 md:h-96 flex items-center justify-center"
+        >
+          <div
+            class="absolute inset-0 opacity-10 dark:opacity-20"
+            style="background-image: radial-gradient(#3B82F6 1px, transparent 1px); background-size: 20px 20px;"
+          >
+          </div>
+          <div class="flex items-center gap-4 md:gap-8 relative z-10 px-4">
+            <div
+              class="w-24 h-24 md:w-32 md:h-32 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 shadow-lg flex items-center justify-center text-white"
+            >
+              <Icon name="ic:round-image" class="w-6 h-6" />
+            </div>
+            <div
+              class="flex-1 h-2 bg-slate-200 dark:bg-slate-800 rounded-full relative w-32 md:w-64 overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-primary/50 w-1/2 animate-[shimmer_2s_infinite] translate-x-[-100%]"
+              >
+              </div>
+              <style>
+                @keyframes shimmer {
+                  100% {
+                    transform: translateX(200%);
+                  }
+                }
+              </style>
+            </div>
+            <div
+              class="w-12 h-12 rounded-full bg-white dark:bg-slate-800 shadow-lg border border-slate-200 dark:border-slate-700 flex items-center justify-center text-primary z-20 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+              <Icon name="ic:round-auto-awesome" class="w-6 h-6" />
+            </div>
+            <div
+              class="w-48 md:w-64 p-4 bg-white dark:bg-slate-800 rounded-lg shadow-lg border border-slate-200 dark:border-slate-700 text-left"
+            >
+              <div
+                class="h-2 w-16 bg-blue-100 dark:bg-blue-900/40 rounded mb-2"
+              >
+              </div>
+              <div
+                class="h-3 w-full bg-slate-100 dark:bg-slate-700 rounded mb-1"
+              >
+              </div>
+              <div class="h-3 w-4/5 bg-slate-100 dark:bg-slate-700 rounded">
+              </div>
+              <div
+                class="mt-3 flex items-center gap-1 text-green-500 text-xs font-semibold"
+              >
+                <Icon name="ic:round-check-circle" class="w-6 h-6" />
+                SEO Optimized
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="py-20 bg-white dark:bg-slate-900">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="text-center mb-16">
-			<h2
-				class="text-3xl text-balance md:text-4xl lg:text-5xl font-display font-medium text-slate-900 dark:text-white mb-4"
-			>
-				Workflow that feels like magic
-			</h2>
-			<p
-				class="text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto"
-			>
-				Three simple steps to transform your entire media library from
-				an SEO liability into a traffic-driving asset.
-			</p>
-		</div>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-			<div
-				class="group relative bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-100 dark:border-slate-700 hover:border-primary/30 transition-all hover:shadow-xl"
-			>
-				<div
-					class="absolute -top-4 -left-4 w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center font-medium text-lg shadow-lg group-hover:scale-110 transition-transform"
-				>
-					1
-				</div>
-				<div
-					class="h-32 mb-6 bg-white dark:bg-slate-900 rounded-xl border border-dashed border-slate-200 dark:border-slate-600 flex items-center justify-center overflow-hidden"
-				>
-					<div class="w-3/4 space-y-2 opacity-50">
-						<div
-							class="h-2 bg-slate-200 dark:bg-slate-700 rounded w-full"
-						>
-						</div>
-						<div
-							class="h-2 bg-slate-200 dark:bg-slate-700 rounded w-2/3"
-						>
-						</div>
-						<div class="mt-4 flex gap-2">
-							<div
-								class="h-6 w-16 bg-blue-100 dark:bg-blue-900 rounded"
-							>
-							</div>
-						</div>
-					</div>
-				</div>
-				<h3
-					class="text-2xl font-display font-medium mb-2 text-slate-900 dark:text-white"
-				>
-					Connect Plugin
-				</h3>
-				<p
-					class="text-subtext-light dark:text-subtext-dark text-sm leading-relaxed"
-				>
-					Install on WordPress in one click. Our lightweight plugin
-					connects securely without slowing down your site.
-				</p>
-			</div>
-			<div
-				class="group relative bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-100 dark:border-slate-700 hover:border-primary/30 transition-all hover:shadow-xl"
-			>
-				<div
-					class="absolute -top-4 -left-4 w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center font-medium text-lg shadow-lg group-hover:scale-110 transition-transform"
-				>
-					2
-				</div>
-				<div
-					class="h-32 mb-6 bg-white dark:bg-slate-900 rounded-xl border border-dashed border-slate-200 dark:border-slate-600 flex items-center justify-center overflow-hidden relative"
-				>
-					<div class="grid grid-cols-3 gap-2 w-3/4 opacity-60">
-						<div
-							class="aspect-square bg-slate-200 dark:bg-slate-700 rounded-md"
-						>
-						</div>
-						<div
-							class="aspect-square bg-slate-200 dark:bg-slate-700 rounded-md"
-						>
-						</div>
-						<div
-							class="aspect-square bg-slate-200 dark:bg-slate-700 rounded-md"
-						>
-						</div>
-					</div>
-				</div>
-				<h3
-					class="text-2xl font-display font-medium mb-2 text-slate-900 dark:text-white"
-				>
-					Bulk Scan
-				</h3>
-				<p
-					class="text-subtext-light dark:text-subtext-dark text-sm leading-relaxed"
-				>
-					The AI scans thousands of images instantly, identifying
-					objects, context, and text within images with 99% accuracy.
-				</p>
-			</div>
-			<div
-				class="group relative bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-100 dark:border-slate-700 hover:border-primary/30 transition-all hover:shadow-xl"
-			>
-				<div
-					class="absolute -top-4 -left-4 w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center font-medium text-lg shadow-lg group-hover:scale-110 transition-transform"
-				>
-					3
-				</div>
-				<div
-					class="h-32 mb-6 bg-white dark:bg-slate-900 rounded-xl border border-dashed border-slate-200 dark:border-slate-600 flex items-center justify-center overflow-hidden"
-				>
-					<div
-						class="flex items-end gap-1 h-16 w-3/4 pb-2 border-b border-slate-300 dark:border-slate-600"
-					>
-						<div
-							class="w-1/5 bg-blue-200 dark:bg-blue-900 h-1/3 rounded-t-sm"
-						>
-						</div>
-						<div
-							class="w-1/5 bg-blue-300 dark:bg-blue-800 h-1/2 rounded-t-sm"
-						>
-						</div>
-						<div
-							class="w-1/5 bg-blue-400 dark:bg-blue-700 h-2/3 rounded-t-sm"
-						>
-						</div>
-						<div class="w-1/5 bg-primary h-full rounded-t-sm"></div>
-					</div>
-				</div>
-				<h3
-					class="text-2xl font-display font-medium mb-2 text-slate-900 dark:text-white"
-				>
-					Publish &amp; Rank
-				</h3>
-				<p
-					class="text-subtext-light dark:text-subtext-dark text-sm leading-relaxed"
-				>
-					Review the suggestions or set to auto-approve. Watch your
-					accessibility scores and organic traffic climb.
-				</p>
-			</div>
-		</div>
-	</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2
+        class="text-3xl text-balance md:text-4xl lg:text-5xl font-display font-medium text-slate-900 dark:text-white mb-4"
+      >
+        Workflow that feels like magic
+      </h2>
+      <p class="text-subtext-light dark:text-subtext-dark max-w-2xl mx-auto">
+        Three simple steps to transform your entire media library from an SEO
+        liability into a traffic-driving asset.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="group relative bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-100 dark:border-slate-700 hover:border-primary/30 transition-all hover:shadow-xl"
+      >
+        <div
+          class="absolute -top-4 -left-4 w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center font-medium text-lg shadow-lg group-hover:scale-110 transition-transform"
+        >
+          1
+        </div>
+        <div
+          class="h-32 mb-6 bg-white dark:bg-slate-900 rounded-xl border border-dashed border-slate-200 dark:border-slate-600 flex items-center justify-center overflow-hidden"
+        >
+          <div class="w-3/4 space-y-2 opacity-50">
+            <div class="h-2 bg-slate-200 dark:bg-slate-700 rounded w-full">
+            </div>
+            <div class="h-2 bg-slate-200 dark:bg-slate-700 rounded w-2/3"></div>
+            <div class="mt-4 flex gap-2">
+              <div class="h-6 w-16 bg-blue-100 dark:bg-blue-900 rounded"></div>
+            </div>
+          </div>
+        </div>
+        <h3
+          class="text-2xl font-display font-medium mb-2 text-slate-900 dark:text-white"
+        >
+          Connect Plugin
+        </h3>
+        <p
+          class="text-subtext-light dark:text-subtext-dark text-sm leading-relaxed"
+        >
+          Install on WordPress in one click. Our lightweight plugin connects
+          securely without slowing down your site.
+        </p>
+      </div>
+      <div
+        class="group relative bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-100 dark:border-slate-700 hover:border-primary/30 transition-all hover:shadow-xl"
+      >
+        <div
+          class="absolute -top-4 -left-4 w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center font-medium text-lg shadow-lg group-hover:scale-110 transition-transform"
+        >
+          2
+        </div>
+        <div
+          class="h-32 mb-6 bg-white dark:bg-slate-900 rounded-xl border border-dashed border-slate-200 dark:border-slate-600 flex items-center justify-center overflow-hidden relative"
+        >
+          <div class="grid grid-cols-3 gap-2 w-3/4 opacity-60">
+            <div
+              class="aspect-square bg-slate-200 dark:bg-slate-700 rounded-md"
+            >
+            </div>
+            <div
+              class="aspect-square bg-slate-200 dark:bg-slate-700 rounded-md"
+            >
+            </div>
+            <div
+              class="aspect-square bg-slate-200 dark:bg-slate-700 rounded-md"
+            >
+            </div>
+          </div>
+        </div>
+        <h3
+          class="text-2xl font-display font-medium mb-2 text-slate-900 dark:text-white"
+        >
+          Bulk Scan
+        </h3>
+        <p
+          class="text-subtext-light dark:text-subtext-dark text-sm leading-relaxed"
+        >
+          The AI scans thousands of images instantly, identifying objects,
+          context, and text within images with 99% accuracy.
+        </p>
+      </div>
+      <div
+        class="group relative bg-slate-50 dark:bg-slate-800 rounded-2xl p-8 border border-slate-100 dark:border-slate-700 hover:border-primary/30 transition-all hover:shadow-xl"
+      >
+        <div
+          class="absolute -top-4 -left-4 w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center font-medium text-lg shadow-lg group-hover:scale-110 transition-transform"
+        >
+          3
+        </div>
+        <div
+          class="h-32 mb-6 bg-white dark:bg-slate-900 rounded-xl border border-dashed border-slate-200 dark:border-slate-600 flex items-center justify-center overflow-hidden"
+        >
+          <div
+            class="flex items-end gap-1 h-16 w-3/4 pb-2 border-b border-slate-300 dark:border-slate-600"
+          >
+            <div class="w-1/5 bg-blue-200 dark:bg-blue-900 h-1/3 rounded-t-sm">
+            </div>
+            <div class="w-1/5 bg-blue-300 dark:bg-blue-800 h-1/2 rounded-t-sm">
+            </div>
+            <div class="w-1/5 bg-blue-400 dark:bg-blue-700 h-2/3 rounded-t-sm">
+            </div>
+            <div class="w-1/5 bg-primary h-full rounded-t-sm"></div>
+          </div>
+        </div>
+        <h3
+          class="text-2xl font-display font-medium mb-2 text-slate-900 dark:text-white"
+        >
+          Publish &amp; Rank
+        </h3>
+        <p
+          class="text-subtext-light dark:text-subtext-dark text-sm leading-relaxed"
+        >
+          Review the suggestions or set to auto-approve. Watch your
+          accessibility scores and organic traffic climb.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="py-20 bg-slate-50 dark:bg-slate-800/50">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="flex flex-col lg:flex-row items-center gap-16">
-			<div class="w-full lg:w-1/3 text-center lg:text-6eft">
-				<div
-					class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 text-xs font-medium uppercase tracking-wider mb-4"
-				>
-					The Problem
-				</div>
-				<h2
-					class="text-3xl md:text-4xl font-display font-medium text-slate-900 dark:text-white mb-6"
-				>
-					Google can't see your images
-				</h2>
-				<p
-					class="text-subtext-light dark:text-subtext-dark text-lg mb-8"
-				>
-					Without alt text, search engines are blind to your visual
-					content. You are missing out on 20-30% of potential traffic
-					from Image Search.
-				</p>
-				<div class="flex flex-col gap-4">
-					<div
-						class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700"
-					>
-						<div
-							class="w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-red-500"
-						>
-						<Icon name="ic:round-error-outline" class="w-6 h-6"/>
-						</div>
-						<div class="text-left">
-							<div
-								class="font-medium text-slate-900 dark:text-white"
-							>
-								Accessibility Lawsuits
-							</div>
-							<div
-								class="text-xs text-subtext-light dark:text-subtext-dark"
-							>
-								Risk of non-compliance fines
-							</div>
-						</div>
-					</div>
-					<div
-						class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700"
-					>
-						<div
-							class="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-500"
-						>
-						<Icon name="ic:round-trending-down" class="w-6 h-6"/>
-						</div>
-						<div class="text-left">
-							<div
-								class="font-medium text-slate-900 dark:text-white"
-							>
-								Lower Rankings
-							</div>
-							<div
-								class="text-xs text-subtext-light dark:text-subtext-dark"
-							>
-								Poor page relevancy scores
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="w-full lg:w-2/3">
-				<div
-					class="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 p-6 md:p-8"
-				>
-					<div
-						class="flex justify-between items-center mb-8 pb-4 border-b border-slate-100 dark:border-slate-800"
-					>
-						<div>
-							<h3
-								class="font-display font-medium text-lg text-slate-900 dark:text-white"
-							>
-								Search Console Insights
-							</h3>
-							<p
-								class="text-xs text-subtext-light dark:text-subtext-dark"
-							>
-								Image Indexing Status
-							</p>
-						</div>
-						<div class="flex gap-2">
-							<span
-								class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-xs text-slate-500"
-								>Last 30 Days</span
-							>
-						</div>
-					</div>
-					<div class="flex gap-4 items-end h-64 w-full px-2">
-						<div
-							class="flex-1 flex flex-col justify-end gap-1 group relative"
-						>
-							<div
-								class="w-full bg-red-400/80 rounded-t h-[80%] bar-grow"
-								style="animation-delay: 0.1s"
-							>
-							</div>
-							<div class="text-[10px] text-center text-slate-400">
-								Week 1
-							</div>
-						</div>
-						<div
-							class="flex-1 flex flex-col justify-end gap-1 group relative"
-						>
-							<div
-								class="w-full bg-red-400/60 rounded-t h-[85%] bar-grow"
-								style="animation-delay: 0.2s"
-							>
-							</div>
-							<div class="text-[10px] text-center text-slate-400">
-								Week 2
-							</div>
-						</div>
-						<div
-							class="flex-1 flex flex-col justify-end gap-1 group relative"
-						>
-							<div
-								class="w-full bg-red-400/40 rounded-t h-[90%] bar-grow"
-								style="animation-delay: 0.3s"
-							>
-							</div>
-							<div class="text-[10px] text-center text-slate-400">
-								Week 3
-							</div>
-						</div>
-						<div
-							class="w-px h-full bg-slate-200 dark:bg-slate-700 mx-2 relative"
-						>
-							<div
-								class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 px-2 py-1 rounded-full text-[10px] whitespace-nowrap font-medium text-primary shadow-sm z-10"
-							>
-								Plugin Installed
-							</div>
-						</div>
-						<div
-							class="flex-1 flex flex-col justify-end gap-1 group relative"
-						>
-							<div
-								class="w-full bg-green-500/40 rounded-t h-[40%] bar-grow"
-								style="animation-delay: 0.4s"
-							>
-							</div>
-							<div class="text-[10px] text-center text-slate-400">
-								Week 4
-							</div>
-						</div>
-						<div
-							class="flex-1 flex flex-col justify-end gap-1 group relative"
-						>
-							<div
-								class="w-full bg-green-500/60 rounded-t h-[20%] bar-grow"
-								style="animation-delay: 0.5s"
-							>
-							</div>
-							<div class="text-[10px] text-center text-slate-400">
-								Week 5
-							</div>
-						</div>
-						<div
-							class="flex-1 flex flex-col justify-end gap-1 group relative"
-						>
-							<div
-								class="w-full bg-green-500 rounded-t h-[5%] bar-grow"
-								style="animation-delay: 0.6s"
-							>
-							</div>
-							<div class="text-[10px] text-center text-slate-400">
-								Week 6
-							</div>
-							<div
-								class="absolute -top-12 left-1/2 -translate-x-1/2 bg-green-600 text-white text-xs py-1 px-2 rounded font-medium shadow-lg"
-							>
-								0 Errors!
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row items-center gap-16">
+      <div class="w-full lg:w-1/3 text-center lg:text-6eft">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 text-xs font-medium uppercase tracking-wider mb-4"
+        >
+          The Problem
+        </div>
+        <h2
+          class="text-3xl md:text-4xl font-display font-medium text-slate-900 dark:text-white mb-6"
+        >
+          Google can't see your images
+        </h2>
+        <p class="text-subtext-light dark:text-subtext-dark text-lg mb-8">
+          Without alt text, search engines are blind to your visual content. You
+          are missing out on 20-30% of potential traffic from Image Search.
+        </p>
+        <div class="flex flex-col gap-4">
+          <div
+            class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-red-500"
+            >
+              <Icon name="ic:round-error-outline" class="w-6 h-6" />
+            </div>
+            <div class="text-left">
+              <div class="font-medium text-slate-900 dark:text-white">
+                Accessibility Lawsuits
+              </div>
+              <div class="text-xs text-subtext-light dark:text-subtext-dark">
+                Risk of non-compliance fines
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center gap-4 p-4 bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center text-orange-500"
+            >
+              <Icon name="ic:round-trending-down" class="w-6 h-6" />
+            </div>
+            <div class="text-left">
+              <div class="font-medium text-slate-900 dark:text-white">
+                Lower Rankings
+              </div>
+              <div class="text-xs text-subtext-light dark:text-subtext-dark">
+                Poor page relevancy scores
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-2/3">
+        <div
+          class="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-700 p-6 md:p-8"
+        >
+          <div
+            class="flex justify-between items-center mb-8 pb-4 border-b border-slate-100 dark:border-slate-800"
+          >
+            <div>
+              <h3
+                class="font-display font-medium text-lg text-slate-900 dark:text-white"
+              >
+                Search Console Insights
+              </h3>
+              <p class="text-xs text-subtext-light dark:text-subtext-dark">
+                Image Indexing Status
+              </p>
+            </div>
+            <div class="flex gap-2">
+              <span
+                class="px-2 py-1 bg-slate-100 dark:bg-slate-800 rounded text-xs text-slate-500"
+                >Last 30 Days</span
+              >
+            </div>
+          </div>
+          <div class="flex gap-4 items-end h-64 w-full px-2">
+            <div class="flex-1 flex flex-col justify-end gap-1 group relative">
+              <div
+                class="w-full bg-red-400/80 rounded-t h-[80%] bar-grow"
+                style="animation-delay: 0.1s"
+              >
+              </div>
+              <div class="text-[10px] text-center text-slate-400">Week 1</div>
+            </div>
+            <div class="flex-1 flex flex-col justify-end gap-1 group relative">
+              <div
+                class="w-full bg-red-400/60 rounded-t h-[85%] bar-grow"
+                style="animation-delay: 0.2s"
+              >
+              </div>
+              <div class="text-[10px] text-center text-slate-400">Week 2</div>
+            </div>
+            <div class="flex-1 flex flex-col justify-end gap-1 group relative">
+              <div
+                class="w-full bg-red-400/40 rounded-t h-[90%] bar-grow"
+                style="animation-delay: 0.3s"
+              >
+              </div>
+              <div class="text-[10px] text-center text-slate-400">Week 3</div>
+            </div>
+            <div
+              class="w-px h-full bg-slate-200 dark:bg-slate-700 mx-2 relative"
+            >
+              <div
+                class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 px-2 py-1 rounded-full text-[10px] whitespace-nowrap font-medium text-primary shadow-sm z-10"
+              >
+                Plugin Installed
+              </div>
+            </div>
+            <div class="flex-1 flex flex-col justify-end gap-1 group relative">
+              <div
+                class="w-full bg-green-500/40 rounded-t h-[40%] bar-grow"
+                style="animation-delay: 0.4s"
+              >
+              </div>
+              <div class="text-[10px] text-center text-slate-400">Week 4</div>
+            </div>
+            <div class="flex-1 flex flex-col justify-end gap-1 group relative">
+              <div
+                class="w-full bg-green-500/60 rounded-t h-[20%] bar-grow"
+                style="animation-delay: 0.5s"
+              >
+              </div>
+              <div class="text-[10px] text-center text-slate-400">Week 5</div>
+            </div>
+            <div class="flex-1 flex flex-col justify-end gap-1 group relative">
+              <div
+                class="w-full bg-green-500 rounded-t h-[5%] bar-grow"
+                style="animation-delay: 0.6s"
+              >
+              </div>
+              <div class="text-[10px] text-center text-slate-400">Week 6</div>
+              <div
+                class="absolute -top-12 left-1/2 -translate-x-1/2 bg-green-600 text-white text-xs py-1 px-2 rounded font-medium shadow-lg"
+              >
+                0 Errors!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section class="py-20 bg-background-light dark:bg-background-dark">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="text-center mb-12">
-			<h2
-				class="text-4xl font-display font-medium text-slate-900 dark:text-white"
-			>
-				Who is VisionContext.cloud for?
-			</h2>
-			<p class="text-subtext-light dark:text-subtext-dark mt-2">
-				Built for anyone who cares about accessibility and rankings.
-			</p>
-		</div>
-		<div class="flex flex-wrap justify-center gap-6">
-			<div
-				class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
-			>
-				<div
-					class="w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400"
-				>
-					<Icon name="ic:round-edit-note" class="w-6 h-6"/>
-				</div>
-				<div>
-					<h3
-						class="font-display font-medium text-lg text-slate-900 dark:text-white"
-					>
-						Bloggers
-					</h3>
-					<p
-						class="text-xs text-subtext-light dark:text-subtext-dark"
-					>
-						Focus on writing, let us handle the tedious tagging.
-					</p>
-				</div>
-			</div>
-			<div
-				class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
-			>
-				<div
-					class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-primary dark:text-blue-400"
-				>
-				<Icon name="ic:round-business-center" class="w-6 h-6"/>
-				</div>
-				<div>
-					<h3
-						class="font-display font-medium text-lg text-slate-900 dark:text-white"
-					>
-						Agencies
-					</h3>
-					<p
-						class="text-xs text-subtext-light dark:text-subtext-dark"
-					>
-						Fix client sites in bulk and charge for the
-						optimization.
-					</p>
-				</div>
-			</div>
-			<div
-				class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
-			>
-				<div
-					class="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400"
-				>
-				<Icon name="ic:round-shopping-bag" class="w-6 h-6"/>
-				</div>
-				<div>
-					<h3
-						class="font-display font-medium text-lg text-slate-900 dark:text-white"
-					>
-						E-commerce
-					</h3>
-					<p
-						class="text-xs text-subtext-light dark:text-subtext-dark"
-					>
-						Automatically tag thousands of product variants.
-					</p>
-				</div>
-			</div>
-			<div
-				class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
-			>
-				<div
-					class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-600 dark:text-purple-400"
-				>
-				<Icon name="ic:round-newspaper" class="w-6 h-6"/>
-				</div>
-				<div>
-					<h3
-						class="font-display font-medium text-lg text-slate-900 dark:text-white"
-					>
-						News Sites
-					</h3>
-					<p
-						class="text-xs text-subtext-light dark:text-subtext-dark"
-					>
-						Speed up publishing workflows for breaking news.
-					</p>
-				</div>
-			</div>
-			<div
-				class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
-			>
-				<div
-					class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-700/50 flex items-center justify-center text-slate-600 dark:text-slate-400"
-				>
-				<Icon name="ic:round-code" class="w-6 h-6"/>
-				</div>
-				<div>
-					<h3
-						class="font-display font-medium text-lg text-slate-900 dark:text-white"
-					>
-						Developers
-					</h3>
-					<p
-						class="text-xs text-subtext-light dark:text-subtext-dark"
-					>
-						Robust API access for custom implementations.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2
+        class="text-4xl font-display font-medium text-slate-900 dark:text-white"
+      >
+        Who is VisionContext.cloud for?
+      </h2>
+      <p class="text-subtext-light dark:text-subtext-dark mt-2">
+        Built for anyone who cares about accessibility and rankings.
+      </p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-6">
+      <div
+        class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
+      >
+        <div
+          class="w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400"
+        >
+          <Icon name="ic:round-edit-note" class="w-6 h-6" />
+        </div>
+        <div>
+          <h3
+            class="font-display font-medium text-lg text-slate-900 dark:text-white"
+          >
+            Bloggers
+          </h3>
+          <p class="text-xs text-subtext-light dark:text-subtext-dark">
+            Focus on writing, let us handle the tedious tagging.
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
+      >
+        <div
+          class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-primary dark:text-blue-400"
+        >
+          <Icon name="ic:round-business-center" class="w-6 h-6" />
+        </div>
+        <div>
+          <h3
+            class="font-display font-medium text-lg text-slate-900 dark:text-white"
+          >
+            Agencies
+          </h3>
+          <p class="text-xs text-subtext-light dark:text-subtext-dark">
+            Fix client sites in bulk and charge for the optimization.
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
+      >
+        <div
+          class="w-12 h-12 rounded-full bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400"
+        >
+          <Icon name="ic:round-shopping-bag" class="w-6 h-6" />
+        </div>
+        <div>
+          <h3
+            class="font-display font-medium text-lg text-slate-900 dark:text-white"
+          >
+            E-commerce
+          </h3>
+          <p class="text-xs text-subtext-light dark:text-subtext-dark">
+            Automatically tag thousands of product variants.
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
+      >
+        <div
+          class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-600 dark:text-purple-400"
+        >
+          <Icon name="ic:round-newspaper" class="w-6 h-6" />
+        </div>
+        <div>
+          <h3
+            class="font-display font-medium text-lg text-slate-900 dark:text-white"
+          >
+            News Sites
+          </h3>
+          <p class="text-xs text-subtext-light dark:text-subtext-dark">
+            Speed up publishing workflows for breaking news.
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-soft w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] flex items-center gap-4 hover:translate-y-[-2px] transition-transform"
+      >
+        <div
+          class="w-12 h-12 rounded-full bg-slate-100 dark:bg-slate-700/50 flex items-center justify-center text-slate-600 dark:text-slate-400"
+        >
+          <Icon name="ic:round-code" class="w-6 h-6" />
+        </div>
+        <div>
+          <h3
+            class="font-display font-medium text-lg text-slate-900 dark:text-white"
+          >
+            Developers
+          </h3>
+          <p class="text-xs text-subtext-light dark:text-subtext-dark">
+            Robust API access for custom implementations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<section
-	class="py-24 bg-slate-900 dark:bg-black text-white relative overflow-hidden"
-	id="join-beta"
->
-	<div
-		class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-primary/20 blur-3xl"
-	>
-	</div>
-	<div
-		class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-purple-500/20 blur-3xl"
-	>
-	</div>
-	<div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
-		<h2
-			class="text-3xl text-balance md:text-4xl lg:text-5xl font-display font-medium mb-6"
-		>
-			Start Simplifying Your SEO Today!
-		</h2>
-		<p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">
-			Join the private beta and get 500 free credits to test on your own
-			site. No credit card required.
-		</p>
-		<form
-			class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto"
-		>
-			<input
-				class="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary backdrop-blur-sm"
-				placeholder="Enter your work email"
-				type="email"
-			/>
-			<button
-				class="px-8 py-4 rounded-full bg-primary hover:bg-primary-dark font-medium text-white shadow-lg shadow-blue-500/30 transition-all transform hover:scale-105"
-				type="button"
-			>
-				Join Beta
-			</button>
-		</form>
-		<p class="mt-4 text-xs text-slate-500">
-			Limited spots available for the beta program.
-		</p>
-	</div>
-</section>
-<footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
-	<div
-		class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6"
-	>
-		<div class="flex items-center gap-2">
-			<Logo />
-		</div>
-		<div class="flex gap-8 text-sm">
-			<a class="hover:text-white transition-colors" href="#">Privacy</a>
-			<a class="hover:text-white transition-colors" href="#">Terms</a>
-			<a class="hover:text-white transition-colors" href="#">Twitter</a>
-			<a class="hover:text-white transition-colors" href="#">Contact</a>
-		</div>
-		<div class="text-sm">© {new Date().getFullYear()} VisionContext Inc.</div>
-	</div>
-</footer>
+
+<JoinBetaCallToAction />

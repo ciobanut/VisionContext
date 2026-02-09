@@ -1,0 +1,59 @@
+---
+const { title, type = "success" } = Astro.props;
+
+const border = {
+  info: "border-slate-200",
+  success: "border-green-200",
+  warning: "border-orange-200",
+  error: "border-red-100",
+  seo: "border-gray-200",
+};
+
+const icons = {
+  info: "info",
+  success: "check_circle",
+  warning: "warning",
+  error: "error",
+  seo: "report",
+};
+
+const bgColor = {
+  info: "bg-blue-500",
+  success: "bg-green-500",
+  warning: "bg-orange-500",
+  error: "bg-red-500",
+  seo: "bg-gray-500",
+};
+
+const bgColorLight = {
+  info: "bg-blue-400/10",
+  success: "bg-green-400/10",
+  warning: "bg-orange-400/10",
+  error: "bg-red-400/10",
+  seo: "bg-gray-400/10",
+};
+
+const textColor = {
+  info: "text-blue-500",
+  success: "text-green-500",
+  warning: "text-orange-500",
+  error: "text-red-500",
+  seo: "text-gray-500",
+};
+---
+
+<div
+  class={`p-4 bg-white rounded-xl border flex items-center gap-4 ${border[type]}`}
+>
+  <div
+    class={`flex p-2 rounded-xl items-center justify-center ${bgColorLight[type]}`}
+  >
+    <span class={`material-icons-round ${textColor[type]}`}>{icons[type]}</span>
+  </div>
+
+  <div class={`font-bold ${textColor[type]} text-xs flex-1`}>
+    {title ?? <div class="h-2 w-full bg-slate-100 rounded" />}
+  </div>
+
+  <div class={`w-2 h-2 rounded-full animate-pulse ${bgColor[type]}`}></div>
+</div>
