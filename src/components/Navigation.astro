@@ -1,0 +1,33 @@
+---
+import Logo from "./Logo.astro";
+import { Icon } from 'astro-icon/components'
+---
+
+<nav class="fixed w-full z-50 px-4 pt-4 sm:pt-6 pointer-events-none">
+    <div class="max-w-7xl mx-auto glass rounded-2xl border border-slate-200 shadow-xl pointer-events-auto overflow-hidden">
+      <div class="px-6 flex justify-between items-center h-16 md:h-20">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-slate-900 rounded-xl flex items-center justify-center text-white font-bold shadow-lg shadow-slate-900/10">
+            <span class="material-icons-round text-lg">auto_fix_normal</span>
+          </div>
+          <span class="font-bold text-lg md:text-xl tracking-tight text-slate-900">
+            AltText<span class="text-blue-600">.ai</span>
+          </span>
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-10 text-[13px] font-bold text-slate-500 uppercase tracking-widest">
+          <a class="hover:text-slate-900 transition-colors" href="#features">Features</a>
+          <a class="hover:text-slate-900 transition-colors" href="#tool">Tools</a>
+          <a class="hover:text-slate-900 transition-colors" href="#">Pricing</a>
+          <a class="hover:text-slate-900 transition-colors" href="#">Docs</a>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <button class="text-sm font-bold text-slate-900 hidden sm:block">Sign in</button>
+          <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition-all shadow-lg shadow-blue-500/20 active:scale-95">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
